@@ -8,42 +8,40 @@
 </head>
 <body>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-    Sign Up
+  Sign Up
 </button>
 
 
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Create Account</h5>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button> -->
-				<button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        <div class="form-text">Your information is safe with us.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirm-password" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
-                    </div>
-                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                </form>
-            </div>
-            <div class="modal-footer">
-	               <button type="submit" class="btn btn-primary">Submit</button>
-				<!-- <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal"></button> -->
-            </div>
-        </div>
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
     </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
